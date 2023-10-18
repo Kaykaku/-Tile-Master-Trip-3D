@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Frame Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9bd84701dd0db9445a01acc4201e7f93, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ac747aa053535904594053ea032bb144, type: 3}
+  - {fileID: 21300000, guid: 6fac88c04c9ff134da94b064fbbe102c, type: 3}
+  - {fileID: 21300000, guid: b93c7af01d090bc4db8b9738e25b9452, type: 3}
+  - {fileID: 21300000, guid: c3fc2db1a7bc52047a11454dee4c8127, type: 3}
+  - {fileID: 21300000, guid: f5341732b1f22404787ff78df1707a50, type: 3}
+  - {fileID: 21300000, guid: 4a8f1643dc4f9e94f99d0154cdc050d7, type: 3}
+  - {fileID: 21300000, guid: 01765f1655d3609458003958bf96bc4d, type: 3}
+  - {fileID: 21300000, guid: 6fd89cf79fb9fc04e867ebea733a44a3, type: 3}
+  - {fileID: 21300000, guid: dd370a789a06b5b419c61f245f5d3aed, type: 3}
+  - {fileID: 21300000, guid: 937c663bc53f79a41829473b9d10456b, type: 3}
+  - {fileID: 21300000, guid: b24bec1cf28890044be40917d84a2926, type: 3}
+  - {fileID: 21300000, guid: 03d9d29db2268cb479628660bac22332, type: 3}
+  - {fileID: 21300000, guid: 1733a3cee516b8c4a8d1fcf205afb2dd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Btn_MainButton_Orange
+  - Frame_StageFrame_s
+  - Frame_ItemFrame05_n
+  - Frame_StageFrame_n_Blue
+  - Slider10_Icon
+  - Slider10_Fill_Red
+  - Btn_MainButton_White
+  - Btn_OtherButton_Hexagon01_Blue
+  - Slider10_Icon2
+  - Btn_OtherButton_Square06
+  - Slider10_Fill_Green
+  - Label_BasicLabel01_White
+  - Slider10_Frame
+  m_RenderDataMap: {}
+  m_Tag: Button Frame Atlas
+  m_IsVariant: 0

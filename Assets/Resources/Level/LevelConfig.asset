@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2815b5380082a49a26c6884c7796ff, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  levels:
+  - name: Map 1
+    displayName: Level 1
+    level: 1
+    playTime: 200
+    details:
+    - type: 0
+      matchCount: 3
+    - type: 1
+      matchCount: 3
+    - type: 2
+      matchCount: 3
+  - name: Map 2
+    displayName: Level 2
+    level: 2
+    playTime: 250
+    details:
+    - type: 0
+      matchCount: 5
+    - type: 1
+      matchCount: 5
+    - type: 2
+      matchCount: 5
+    - type: 3
+      matchCount: 5
+  - name: Map 3
+    displayName: Level 3
+    level: 3
+    playTime: 300
+    details:
+    - type: 0
+      matchCount: 7
+    - type: 1
+      matchCount: 7
+    - type: 2
+      matchCount: 7
+    - type: 3
+      matchCount: 7
+    - type: 4
+      matchCount: 7
+  - name: Map 4
+    displayName: Level 4
+    level: 4
+    playTime: 400
+    details:
+    - type: 0
+      matchCount: 10
+    - type: 1
+      matchCount: 10
+    - type: 2
+      matchCount: 10
+    - type: 3
+      matchCount: 10
+    - type: 4
+      matchCount: 10
+    - type: 5
+      matchCount: 10
+  - name: Map 5
+    displayName: Level 5
+    level: 5
+    playTime: 500
+    details:
+    - type: 0
+      matchCount: 4
+    - type: 1
+      matchCount: 16
+    - type: 2
+      matchCount: 3
+    - type: 3
+      matchCount: 17
+    - type: 4
+      matchCount: 7
+    - type: 5
+      matchCount: 14
+    - type: 6
+      matchCount: 8
+    - type: 7
+      matchCount: 13
+    - type: 8
+      matchCount: 11

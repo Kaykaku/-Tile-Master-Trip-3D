@@ -59,15 +59,11 @@ namespace Entry
 #endif
 
 				//var adsServices = gameServices.GetService<AdsService>();
-				var displayService = gameServices.GetService<DisplayService>();
 				var audioService = gameServices.GetService<AudioService>();
 				var playerService = gameServices.GetService<PlayerService>();
 
-				playerService.GetFirstDay();
-
 				// --------------------------- Audio ---------------------------------
 				// Set Volume
-				playerService.SetLevelPlayed(0);
 				playerService.OnMusicVolumeChange = audioService.SetMusicVolume;
 				playerService.OnSoundVolumeChange = audioService.SetSoundVolume;
 

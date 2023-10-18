@@ -1,16 +1,13 @@
 public enum SceneType
 {
+	Main,
 	Game,
-	SettingsPopup,
-	ChallengePopup,
-	SkinPopup,
-	TransitionPopup,
-	ShopPopup,
+	Settings,
+	Booster,
+	Pause,
 	WinPopup,
 	LosePopup,
-	UnlockRewardPopup,
-	Main,
-	RateUs
+	NextLevel
 }
 
 public enum ActionType
@@ -22,5 +19,16 @@ public enum ActionType
 	BuyOption,
 	MessageOption,
 	TransitionOption
+}
+
+public enum SoundType
+{
+	Button,
+	Match,
+	Collect,
+	Booster,
+	GetBooster,
+	Win,
+	Lose,
 }
 

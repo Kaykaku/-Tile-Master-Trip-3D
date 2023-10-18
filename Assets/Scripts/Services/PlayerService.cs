@@ -14,11 +14,12 @@ namespace Services
 		private const string VibrateKey = "vbr";
 
 		private const string currentLevelKey = "clk";
-		private const string adsCountKey = "ack";
-		private const string replayCountKey = "rpk";
-		private const string firstDateKey = "fkd";
+		private const string coinKey = "cnk";
+		private const string starKey = "srk";
+		private const string ownedItemsKey = "oik";
 
 		private const string Break = "~";
+		private Dictionary<BoosterType, int> ownedItems = new Dictionary<BoosterType, int>();
 
 		/// <summary>
 		/// Action for catch event when music volume change
@@ -157,39 +158,38 @@ namespace Services
 		{
 			return PlayerPrefs.GetInt(currentLevelKey, 0);
 		}
-		public void SetLevelPlayed(int count)
+		public void SetCoin(int coin)
 		{
-			count = 1;
-			PlayerPrefs.SetInt(adsCountKey, count);
+			PlayerPrefs.SetInt(coinKey, coin);
 		}
-		public int GetLevelPlayed()
+		public void AddCoin(int coin)
 		{
-			return PlayerPrefs.GetInt(adsCountKey, 0);
+			PlayerPrefs.SetInt(coinKey, GetCoin() + coin);
 		}
-		public long GetFirstDay()
+		public int GetCoin()
 		{
-			if (!PlayerPrefs.HasKey(firstDateKey))
-			{
-				long currentDate = DateTime.Now.Ticks / 1000;
-				PlayerPrefs.SetString(firstDateKey, currentDate.ToString());
-			}
-			return long.Parse(PlayerPrefs.GetString(firstDateKey));
+			return PlayerPrefs.GetInt(coinKey, 0);
 		}
-		public int GetUserDay()
+		public void AddStar(int star)
 		{
-			long currentDate = DateTime.Now.Ticks / 1000;
-			long firstDate = GetFirstDay();
-			long day = ((currentDate - firstDate) / 24 / 60 / 60 / 1000) + 1;
-			return (int)day;
+			PlayerPrefs.SetInt(starKey, GetCoin() + star);
 		}
-		public int GetReplayCount()
+		public int GetStar()
 		{
-			PlayerPrefs.SetInt(replayCountKey,PlayerPrefs.GetInt(replayCountKey, -1) + 1);
-			return PlayerPrefs.GetInt(replayCountKey);
+			return PlayerPrefs.GetInt(starKey, 0);
 		}
-		public void ResetReplayCount()
+		public int GetBoosterAmount(BoosterType itemType)
 		{
-			PlayerPrefs.SetInt(replayCountKey, -1);
+			if (ownedItems.ContainsKey(itemType)) return ownedItems[itemType];
+			int qty = PlayerPrefs.GetInt(ownedItemsKey + (int)itemType, 0);
+			ownedItems.Add(itemType, qty);
+			return qty;
+		}
+		public void SetBoosterAmount(BoosterType itemType, int quantity = 0)
+		{
+			PlayerPrefs.SetInt(ownedItemsKey + (int)itemType, quantity);
+			if (ownedItems.ContainsKey(itemType)) ownedItems[itemType] = quantity;
+			else ownedItems.Add(itemType, quantity);
 		}
 		public void Save()
 		{

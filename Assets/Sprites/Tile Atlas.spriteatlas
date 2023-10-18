@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tile Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 73f8c9b60bc09e7459ee2fb395693f0b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 2f97dd40c1ca664418228d21177e010c, type: 3}
+  - {fileID: 21300000, guid: 34fa42f0d2ea091429ccb07e3ab9edb4, type: 3}
+  - {fileID: 21300000, guid: c02c3a5276a2a994f875a5bfc11b2cf3, type: 3}
+  - {fileID: 21300000, guid: 87acf2823b8459a438c5107b622d58f9, type: 3}
+  - {fileID: 21300000, guid: 4444d103f37d0dd41981df7ecdead8ba, type: 3}
+  - {fileID: 21300000, guid: 840c23639628df14e9a2e0587934f26c, type: 3}
+  - {fileID: 21300000, guid: 319237c31976aac4780de388ac47a332, type: 3}
+  - {fileID: 21300000, guid: 1b9844e3d5baced4dad6f3bfe4753b8a, type: 3}
+  - {fileID: 21300000, guid: a8ac1a44c0cf4ff4f9bf2fdc0787d821, type: 3}
+  - {fileID: 21300000, guid: 4bcfe1a4271784d488764408a2af76ca, type: 3}
+  - {fileID: 21300000, guid: 1bfdf2d4f0f33ef46b22baad56b61761, type: 3}
+  - {fileID: 21300000, guid: 89ccb4e5dab00ea4cb67d030cc6a4fd8, type: 3}
+  - {fileID: 21300000, guid: 8fe6caf511a8a3c409c422e870efc596, type: 3}
+  - {fileID: 21300000, guid: fdeaaf262fda35a41ab9c762ed0328c0, type: 3}
+  - {fileID: 21300000, guid: 9932ad56f6e2f3d4d9d1915756a17b85, type: 3}
+  - {fileID: 21300000, guid: 1cba9a37d030ca54e88c25cf95dd120f, type: 3}
+  - {fileID: 21300000, guid: 829d5e770bc276b4b96f7e3ea527b261, type: 3}
+  - {fileID: 21300000, guid: 0361d45838e74b04ea0ecc4fb5ae54af, type: 3}
+  - {fileID: 21300000, guid: e0eca1e946ca1a4479f10363fd1c7691, type: 3}
+  - {fileID: 21300000, guid: c7da278bbcd319247972fd62bd2101b8, type: 3}
+  - {fileID: 21300000, guid: fb7a825dc3415024084ab17abe477c3f, type: 3}
+  - {fileID: 21300000, guid: 991ff02e8063e6c4681c60c0cfab3a6b, type: 3}
+  - {fileID: 21300000, guid: f2b4979e172fe5c43a035e7cb6308c27, type: 3}
+  - {fileID: 21300000, guid: d58dfa3f88259fc4ba95246cb892a107, type: 3}
+  - {fileID: 21300000, guid: 687cf85f8d4be30418450cfff92f77bd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Icon 13
+  - Icon 11
+  - Icon 22
+  - Icon 23
+  - Icon 5
+  - Icon 21
+  - Icon 12
+  - Icon 25
+  - Icon 3
+  - Icon 14
+  - Icon 2
+  - Icon 6
+  - Icon 8
+  - Icon 18
+  - Icon 17
+  - Icon 19
+  - Icon 1
+  - Icon 15
+  - Icon 20
+  - Icon 24
+  - Icon 10
+  - Icon 9
+  - Icon 7
+  - Icon 16
+  - Icon 4
+  m_RenderDataMap: {}
+  m_Tag: Tile Atlas
+  m_IsVariant: 0

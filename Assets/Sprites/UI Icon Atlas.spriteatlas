@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI Icon Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: e64ae1c5f4d46064c97e23e2393deaab, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 5d5eb320e88844a448d532396a3675da, type: 3}
+  - {fileID: 21300000, guid: 81b67b4145447154193a5de5c9b01914, type: 3}
+  - {fileID: 21300000, guid: 82db9d020280c8f41aafff64bf6b2f4b, type: 3}
+  - {fileID: 21300000, guid: 169edd82791cb4a45b3bba0ea15d6369, type: 3}
+  - {fileID: 21300000, guid: e3269db3eaa50ac4eb1f355cec01943f, type: 3}
+  - {fileID: 21300000, guid: c210ffd71dc69e940b50d8d6912ea741, type: 3}
+  - {fileID: 21300000, guid: ba12b209938c7644c987ffaaa1cee493, type: 3}
+  - {fileID: 21300000, guid: fec4e33c02960c64ab36912f47fff2b9, type: 3}
+  - {fileID: 21300000, guid: cf88102dd2933274abfdecac94e12103, type: 3}
+  - {fileID: 21300000, guid: b404f6dd17ee5e44191fad447c9a82a3, type: 3}
+  - {fileID: 21300000, guid: e4c8ec8e6628a154b80d4de73bb4cdf9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Icon_PictoIcon_Sound_on
+  - Icon_StatsIcon_Skeleton
+  - Icon_ImageIcon_Glod01_l
+  - Icon_ImageIcon_Star01_l
+  - Icon_PictoIcon_Close01
+  - Icon_PictoIcon_Add01
+  - Icon_PictoIcon_Setting
+  - Icon_PictoIcon_Pause
+  - Icon_PictoIcon_Music_on
+  - Icon_Reward_Pass_clover
+  - Icon_ImageIcon_Knife_Battle
+  m_RenderDataMap: {}
+  m_Tag: UI Icon Atlas
+  m_IsVariant: 0

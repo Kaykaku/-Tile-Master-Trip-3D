@@ -66,6 +66,29 @@ namespace Services
 				audioSouce.Play();
 			}
 		}
+		public bool IsSoundPlaying(SoundType soundType)
+		{
+			if (soundOn == true && soundVolume > 0.0f)
+			{
+				var audioSouce = soundAudioSources[soundType.ToString()];
+				audioSouce.volume = soundVolume * soundVolumes[soundType.ToString()];
+				return audioSouce.isPlaying;
+			}
+			return false;
+		}
+		public void PlayButton()
+		{
+			PlaySound(SoundType.Button);
+		}
+		public void PlaySound(SoundType soundType)
+		{
+			if (soundOn == true && soundVolume > 0.0f)
+			{
+				var audioSouce = soundAudioSources[soundType.ToString()];
+				audioSouce.volume = soundVolume * soundVolumes[soundType.ToString()];
+				audioSouce.Play();
+			}
+		}
 		// Play Music
 		public void PlayMusic()
 		{
