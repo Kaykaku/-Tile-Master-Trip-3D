@@ -43,8 +43,6 @@ namespace Game
 		[SerializeField] private PausePopup pausePopup;
 		[SerializeField] private LosePopup losePopup;
 
-		[SerializeField] private float offset = 0.1f;
-
 		private bool isStop;
 		private int timer;
 		private Coroutine comboCoroutine;

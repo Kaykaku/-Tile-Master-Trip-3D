@@ -17,7 +17,6 @@ public class HomeController : MonoBehaviour
     private PlayerService playerService;
     private DisplayService displayService;
     private AudioService audioService;
-    private AdsService adsService;
     private void Awake()
     {
         //Check null
@@ -32,7 +31,6 @@ public class HomeController : MonoBehaviour
             playerService = gameServices.GetService<PlayerService>();
             displayService = gameServices.GetService<DisplayService>();
             audioService = gameServices.GetService<AudioService>();
-            adsService = gameServices.GetService<AdsService>();
         }
         else
         {
@@ -46,7 +44,6 @@ public class HomeController : MonoBehaviour
 
         audioService.PlayMusic();
         settingPopup.Initialized(()=> settingPopup.gameObject.SetActive(false));
-        adsService.RequestBannerAd(GoogleMobileAds.Api.AdSize.Banner,GoogleMobileAds.Api.AdPosition.Bottom);
     }
     public void AddCoinButton()
     {
@@ -57,7 +54,6 @@ public class HomeController : MonoBehaviour
     public void PlayButton()
     {
         audioService.PlaySound(SoundType.Button);
-        adsService.DestroyBannerAd();
         SceneManager.LoadSceneAsync(Constants.GameScene);
     }
     public void SettingButton()

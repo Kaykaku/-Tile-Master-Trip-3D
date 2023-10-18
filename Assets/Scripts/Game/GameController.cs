@@ -34,7 +34,6 @@ namespace Game
         private GameServices gameServices;
         private PlayerService playerService;
         private AudioService audioService;
-        private AdsService adsService;
         private InputService inputService;
 
 		private bool isWin = false;
@@ -65,7 +64,6 @@ namespace Game
                 gameServices = go.GetComponent<GameServices>();
                 playerService = gameServices.GetService<PlayerService>();
                 audioService = gameServices.GetService<AudioService>();
-                adsService = gameServices.GetService<AdsService>();
                 inputService = gameServices.GetService<InputService>();
             }
             else
@@ -94,8 +92,6 @@ namespace Game
                 slotDic.Add(i, null);
             }
 
-            adsService.RequestAndLoadInterstitialAd();
-            adsService.RequestAndLoadRewardedAd();
             level = playerService.GetLevel();
 
             LevelInfo info = levelConfig.Levels[level];
@@ -377,16 +373,10 @@ namespace Game
         public void OnAdsBuyItem(BoosterInfo info)
         {
             audioService.PlaySound(SoundType.Button);
-            if (adsService.IsRewardReady())
-            {
-                adsService.ShowRewardedAd(isComplete =>
-                {
-                    audioService.PlaySound(SoundType.GetBooster);
-                    playerService.SetBoosterAmount(info.Type, playerService.GetBoosterAmount(info.Type) + 1);
-                    view.UpdateInfo();
-                    view.Continue();
-                });
-            }
+            audioService.PlaySound(SoundType.GetBooster);
+            playerService.SetBoosterAmount(info.Type, playerService.GetBoosterAmount(info.Type) + 1);
+            view.UpdateInfo();
+            view.Continue();
         }
         public void UseItem(BoosterType type)
         {

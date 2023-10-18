@@ -21,7 +21,6 @@ namespace Game
         private float windForce = 7f;
         private float windRotation = 2f;
         private float lockTime = 0.1f;
-        private float rotateSpeed = 3f;
 
         public TileType Type { get => type;}
 
@@ -33,7 +32,6 @@ namespace Game
             windForce = tileConfig.WindForce;
             windRotation = tileConfig.WindRotation;
             lockTime = tileConfig.LockTime;
-            rotateSpeed = tileConfig.RotateSpeed;
 
             Material temp = Instantiate(meshRen.material);
             temp.mainTexture = sprite.texture;
@@ -52,7 +50,7 @@ namespace Game
             if (objectDirection.y < 0.5f)
             {
                 objectDirection.y = 0.5f;
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(objectDirection), Time.fixedDeltaTime * rotateSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(objectDirection), Time.fixedDeltaTime * 2f);
             }
         }
         public void Select(bool isSelect)

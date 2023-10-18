@@ -603,12 +603,12 @@ MonoBehaviour:
   rewardedInterstitialIdAndroid: ca-app-pub-3940256099942544/5354046379
   mrecIdAndroid: ca-app-pub-3940256099942544/6300978111
   appOpenAdsIdAndroid: ca-app-pub-3940256099942544/3419835294
-  interstitialIdIOS: ca-app-pub-3940256099942544/4411468910
-  bannerIdIOS: ca-app-pub-3940256099942544/2934735716
-  rewardedIdIOS: ca-app-pub-3940256099942544/1712485313
-  rewardedInterstitialIdIOS: ca-app-pub-3940256099942544/6978759866
-  mrecIdIos: ca-app-pub-3940256099942544/2934735716
-  appOpenAdsIdIos: ca-app-pub-3940256099942544/5662855259
+  interstitialIdIOS: 
+  bannerIdIOS: 
+  rewardedIdIOS: 
+  rewardedInterstitialIdIOS: 
+  mrecIdIos: 
+  appOpenAdsIdIos: 
 --- !u!4 &1582869043
 Transform:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582869041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46986628, y: 9.8418255, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

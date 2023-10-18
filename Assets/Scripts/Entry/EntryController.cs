@@ -50,14 +50,6 @@ namespace Entry
 				gameServices.AddService(new PlayerService());
 				gameServices.AddService(new GameService(model.TOSURL, model.PrivacyURL, model.RateURL));
 
-#if UNITY_ANDROID
-				gameServices.AddService(new AdsService(model.BannerIdAndroid,model.IntersIdAndroid,model.RewardedIdAndroid,model.RewardedInterstitialIdAndroid,model.AOAIdAndroid));
-#elif UNITY_IPHONE || UNITY_IOS
-				gameServices.AddService(new AdsService(model.BannerIdIOS,model.IntersIdIOS,model.RewardedIdIOS,model.RewardedInterstitialIdIOS,model.AOAIdIOS));
-#else
-				gameServices.AddService(new AdsService(UnUsed,UnUsed,UnUsed,UnUsed,UnUsed));
-#endif
-
 				//var adsServices = gameServices.GetService<AdsService>();
 				var audioService = gameServices.GetService<AudioService>();
 				var playerService = gameServices.GetService<PlayerService>();
